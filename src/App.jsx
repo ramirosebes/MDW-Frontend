@@ -14,7 +14,6 @@ function App() {
               <Route path="/" element={<Home />} />
               <Route path="/products/" element={<ItemListContainer />} />
               <Route path="/item/:id" element={<ItemDetailContainer />} />
-              {/* <Route path="/products" element={<ProductsList />} /> */}
             </Routes>
           {/* <Footer /> */}
         </BrowserRouter>

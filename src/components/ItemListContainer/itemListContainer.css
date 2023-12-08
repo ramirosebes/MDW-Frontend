@@ -1,5 +1,3 @@
-.main-content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.itemListContainer-container {
+    margin-top: 2rem;
 }

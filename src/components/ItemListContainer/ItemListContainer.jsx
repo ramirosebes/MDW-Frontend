@@ -21,7 +21,7 @@ function ItemListContainer() {
     // console.log(products);
 
     return (
-        <div className="main-content">
+        <div className="itemListContainer-container">
             <ItemList products={products} />
         </div>
     );
