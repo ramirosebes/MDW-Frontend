@@ -1,0 +1,28 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #272727;
+}
+
+.logo {
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    gap: 1rem;
+}
+
+.menu-link {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #ffffff;
+    font-weight: bold;
+}
