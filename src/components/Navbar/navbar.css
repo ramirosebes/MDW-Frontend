@@ -1,4 +1,4 @@
-.navbar {
+/* .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -25,4 +25,127 @@
     font-size: 1.2rem;
     color: #ffffff;
     font-weight: bold;
+} */
+
+.div-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: #272727;
 }
+
+.logo {
+    color: #ffffff;
+    font-size: 2rem;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navList {
+    list-style-type: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.navList li a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #ffffff;
+}
+
+.liRankingClass {
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.openMenu,
+.closeMenu {
+    display: block;
+    border: 0;
+    font-size: 1.25rem;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.openMenu {
+    color: #ffffff;
+}
+
+.closeMenu {
+    color: #ffffff;
+    align-self: end;
+}
+
+.navClass {
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Alinea las palabras a la izquierda, derecha o en el centro */
+    gap: 2rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #272727;
+    padding: 1.1rem;
+    /* box-shadow: 0 0 0 100vmax #00000080; */
+    width: 8rem;
+}
+
+.navClass.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+.navList {
+    flex-direction: column;
+    align-items: center; /*Alinea las palabras centradas*/
+}
+
+.navList li a {
+    color: #ecececec;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+}
+
+.navList li a:hover {
+    background-color: #737373;
+}
+
+.img-nav {
+    width: 2rem;
+    height: 2rem;
+}
+
+/* .slide-in-right {
+	animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes slide-in-right {
+    0% {
+    transform: translateX(1000px);
+    opacity: 0;
+    }
+    100% {
+    transform: translateX(0);
+    opacity: 1;
+    }
+}
+
+.slide-in-left {
+	animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes slide-in-left {
+    0% {
+    transform: translateX(-1000px);
+    opacity: 0;
+    }
+    100% {
+    transform: translateX(0);
+    opacity: 1;
+    }
+} */

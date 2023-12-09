@@ -4,6 +4,7 @@ import Home from "./components/Home/Home";
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
 import './App.css';
 import ItemDetailContainer from "./components/ItemDetailContainer/ItemDetailContainer";
+import LogIn from "./components/LogIn/LogIn";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
               <Route path="/" element={<Home />} />
               <Route path="/products/" element={<ItemListContainer />} />
               <Route path="/item/:id" element={<ItemDetailContainer />} />
+              <Route path="/login" element={<LogIn />} />
             </Routes>
           {/* <Footer /> */}
         </BrowserRouter>
