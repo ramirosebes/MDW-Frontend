@@ -42,3 +42,46 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+.App {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	height: 100vh;
+  }
+  
+  .signup-form,
+  .login-form {
+	display: flex;
+	flex-direction: column;
+	width: 300px; /* ajusta el ancho según sea necesario */
+	padding: 20px;
+	border: 1px solid #ccc; /* añade un borde para resaltar el formulario */
+	border-radius: 8px; /* redondea las esquinas del formulario */
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* añade una ligera sombra */
+	margin: 20px; /* agrega un margen exterior */
+  }
+  
+  input,
+  .signup-button,
+  .login-button {
+	margin: 10px 0; /* espacio adicional para mejorar la legibilidad */
+	padding: 10px; /* añade relleno para un aspecto más agradable */
+  }
+  
+  .signup-button,
+  .login-button {
+	cursor: pointer;
+	background-color: #4caf50; /* color de fondo verde */
+	color: #fff; /* color de texto blanco */
+	border: none; /* elimina el borde */
+	border-radius: 4px; /* redondea las esquinas del botón */
+  }
+  
+  .signup-button:hover,
+  .login-button:hover {
+	background-color: #45a049; /* cambia el color de fondo al pasar el mouse */
+  }
+  
