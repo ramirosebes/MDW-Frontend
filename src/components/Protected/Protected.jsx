@@ -9,10 +9,9 @@ const Protected = () => {
 
         token ? 
         <>
-            <Outlet/> 
-            <Navigate to="/admin"/>
+            <Outlet/>
         </>
-        : 
+        :
         <Navigate to="/login"/>
     )
 }

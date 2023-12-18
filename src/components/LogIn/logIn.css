@@ -1,0 +1,69 @@
+.loginDivContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15rem;
+}
+
+.loginDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 20px;
+    border-radius: 10px;
+    gap: 1rem;
+}
+
+.loginTitle {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.loginForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.loginInput {
+    border: none;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: 200px;
+    height: 30px;
+    padding-left: 10px;
+}
+
+.loginInput:focus {
+    outline: none;
+}
+
+.loginForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.loginLabel {
+    font-size: 1rem;
+    font-weight: bold;
+    display: flex;
+    align-self: flex-start;
+}
+
+.loginButton {
+    border: none;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: 100px;
+    height: 30px;
+    background-color: #1e90ff;
+    color: white;
+    font-weight: bold;
+}

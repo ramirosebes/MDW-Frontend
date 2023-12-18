@@ -23,7 +23,7 @@ const AdminProducts = ({ product, onDelete }) => {
             </div>
             <div className="adminButtons">
                 {/* <button className="btnEdit">Edit</button> */}
-                <Link className="btnEdit" to={`/editProduct/${product._id}`}>Edit</Link>
+                <Link className="btnEdit" to={`/admin/editProduct/${product._id}`}>Edit</Link>
                 <button className="btnDelete" onClick={handleDeleteClick}>Delete</button>
             </div>
         </div>

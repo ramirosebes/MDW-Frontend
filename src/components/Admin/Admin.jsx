@@ -46,7 +46,7 @@ const Admin = () => {
             <div className="productsContainer">
                 <div className="adminBtnContainer">
                     {/* <button className="addProduct">Add new product</button> */}
-                    <Link className="addProduct" to="/addProduct">Add new product</Link>
+                    <Link className="addProduct" to="/admin/addProduct">Add new product</Link>
                 </div>
                 {products.map((prod) => (<AdminProducts product={prod} key={prod._id} onDelete={handleDeleteProduct} />))}
             </div>
