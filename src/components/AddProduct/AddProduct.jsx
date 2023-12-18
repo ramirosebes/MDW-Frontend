@@ -7,6 +7,7 @@ const AddProduct = () => {
     const { register, handleSubmit, reset, formState: { errors } } = useForm();
     const [successMessage, setSuccessMessage] = useState('');
     const [errorMessage, setErrorMessage] = useState('');
+    const token = localStorage.getItem('token');
 
     const enviar = async (data) => {
         try {
@@ -17,7 +18,11 @@ const AddProduct = () => {
             }
 
             // Realizar la solicitud POST a la API
-            const response = await axios.post('http://localhost:3001/api/products', data);
+            const response = await axios.post('http://localhost:3001/api/products', data, {
+            headers: {
+                'authorization': token
+            }
+        });
 
             // Hacer algo con la respuesta (por ejemplo, imprimir en la consola)
             console.log('Product added:', response.data);

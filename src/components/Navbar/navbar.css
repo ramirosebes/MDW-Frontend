@@ -92,7 +92,8 @@
     background-color: #272727;
     padding: 1.1rem;
     /* box-shadow: 0 0 0 100vmax #00000080; */
-    width: 8rem;
+    width: 11rem;
+    height: 100rem;
 }
 
 .navClass.visible {

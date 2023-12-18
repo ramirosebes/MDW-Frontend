@@ -9,6 +9,7 @@ const EditProduct = () => {
     const [successMessage, setSuccessMessage] = useState('');
     const [errorMessage, setErrorMessage] = useState('');
     const { id } = useParams();
+    const token = localStorage.getItem('token');
 
     useEffect(() => {
         const fetchProductById = async () => {
@@ -29,7 +30,11 @@ const EditProduct = () => {
     const enviar = async (data) => {
         try {
             // Realizar la solicitud PUT a la API con la URL específica del producto
-            const response = await axios.put(`http://localhost:3001/api/products/${id}`, data);
+            const response = await axios.put(`http://localhost:3001/api/products/${id}`, data, {
+                headers: {
+                    'authorization': token
+                }
+            });
 
             // Hacer algo con la respuesta (por ejemplo, imprimir en la consola)
             console.log('Product edited:', response.data);

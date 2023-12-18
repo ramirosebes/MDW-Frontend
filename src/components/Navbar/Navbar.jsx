@@ -6,6 +6,7 @@ import openIcon from '../../img/menu.svg';
 
 function Navbar() {
     const [isNavVisible, setNavVisibility] = useState(false);
+    const token = localStorage.getItem('token');
 
     const handleNavBarOpenButton = () => {
         setNavVisibility(true);
@@ -25,8 +26,8 @@ function Navbar() {
                 <ul className="navList">
                     <li><Link className="menu-link" to="/home" onClick={handleNavBarCloseButton}>Home</Link></li>
                     <li><Link className="menu-link" to="/products" onClick={handleNavBarCloseButton}>Products</Link></li>
-                    <li><Link className="menu-link" to="/login" onClick={handleNavBarCloseButton}>Log In</Link></li>
-                    <li><Link className="menu-link" to="/admin" onClick={handleNavBarCloseButton}>Admin</Link></li>
+                    {token && <li><Link className="menu-link" to="/admin" onClick={handleNavBarCloseButton}>Manage products</Link></li>}
+                    <li><Link className="menu-link" to="/login" onClick={handleNavBarCloseButton}>{token ? "Log Out" : "Log In"}</Link></li>
                 </ul>
             </nav>
         </div>
