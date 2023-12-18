@@ -1,0 +1,47 @@
+.DeleteConfirmationModal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    /* border: 1px solid black; */
+    width: 340px;
+}
+
+.DeleteConfirmationModalDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    gap: 1rem;
+    width: 300px;
+}
+
+.DeleteConfirmationModalButtonsDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.DeleteConfirmationModalBtn {
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    width: 100px;
+    background-color: transparent;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.DeleteConfirmationModalBtnCancel {
+    background-color: #272727;
+    color: white;
+}
+
+.DeleteConfirmationModalBtnConfirm {
+    background-color: #fe3d4e;
+    color: white;
+}

@@ -7,6 +7,7 @@ import ItemDetailContainer from "./components/ItemDetailContainer/ItemDetailCont
 import LogIn from "./components/LogIn/LogIn";
 import Admin from "./components/Admin/Admin";
 import AddProduct from "./components/AddProduct/AddProduct";
+import EditProduct from "./components/EditProduct/EditProduct";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
               <Route path="/login" element={<LogIn />} />
               <Route path="/admin" element={<Admin />} />
               <Route path="/addProduct" element={<AddProduct />} />
+              <Route path="/editProduct/:id" element={<EditProduct />} />
             </Routes>
           {/* <Footer /> */}
         </BrowserRouter>
