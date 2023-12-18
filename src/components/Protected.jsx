@@ -7,7 +7,7 @@ const Protected = () => {
 
     return(
 
-        token ? <Outlet/> : <Navigate to="/login"/>
+        token ? <Outlet/> : <Navigate to="login"/>
     )
 }
 
