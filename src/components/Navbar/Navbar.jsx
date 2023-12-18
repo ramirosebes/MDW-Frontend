@@ -23,7 +23,7 @@ function Navbar() {
             <nav className={`navClass ${isNavVisible ? 'visible' : ''}`}>
                 <button className="closeMenu" id="close" onClick={handleNavBarCloseButton}><img src={closeIcon} alt="" className="img-nav" /></button>
                 <ul className="navList">
-                    <li><Link className="menu-link" to="/" onClick={handleNavBarCloseButton}>Home</Link></li>
+                    <li><Link className="menu-link" to="/home" onClick={handleNavBarCloseButton}>Home</Link></li>
                     <li><Link className="menu-link" to="/products" onClick={handleNavBarCloseButton}>Products</Link></li>
                     <li><Link className="menu-link" to="/login" onClick={handleNavBarCloseButton}>Log In</Link></li>
                     <li><Link className="menu-link" to="/admin" onClick={handleNavBarCloseButton}>Admin</Link></li>
