@@ -26,6 +26,7 @@ function Navbar() {
                     <li><Link className="menu-link" to="/" onClick={handleNavBarCloseButton}>Home</Link></li>
                     <li><Link className="menu-link" to="/products" onClick={handleNavBarCloseButton}>Products</Link></li>
                     <li><Link className="menu-link" to="/login" onClick={handleNavBarCloseButton}>Log In</Link></li>
+                    <li><Link className="menu-link" to="/admin" onClick={handleNavBarCloseButton}>Admin</Link></li>
                 </ul>
             </nav>
         </div>

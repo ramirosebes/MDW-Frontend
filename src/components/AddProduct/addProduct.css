@@ -1,0 +1,90 @@
+.divFormAddProduct {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 9rem; */
+    position: fixed;
+    justify-content: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border-radius: 10px;
+}
+
+/* .formAddProductTitle{
+font-size: 3rem;
+font-weight: bold;
+} */
+
+.formAddProduct {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.formInput {
+    border-radius: 5px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 8px;
+    width: 300px;
+}
+
+.formInput:focus {
+    outline: none;
+}
+
+.textarea {
+    width: 300px;
+    height: 200px;
+    font-family: 'Calibri', sans-serif;
+    font-size: 15px;
+    resize: none;
+}
+
+.formButton {
+    border-radius: 5px;
+    border: none;
+    width: 100px;
+    height: 30px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    color: white;
+    background-color: #272727;
+    cursor: pointer;
+}
+
+.errorText {
+    color: #ff0000;
+    font-weight: bold;
+}
+
+.successMessage {
+    color: #2dcc70;
+    font-weight: bold;
+}
+
+.errorMessage {
+    color: #ff0000;
+    font-weight: bold;
+}
+
+/* .closeModal {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: cursive;
+}
+
+.divCloseModal {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+} */

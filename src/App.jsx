@@ -5,6 +5,8 @@ import ItemListContainer from './components/ItemListContainer/ItemListContainer'
 import './App.css';
 import ItemDetailContainer from "./components/ItemDetailContainer/ItemDetailContainer";
 import LogIn from "./components/LogIn/LogIn";
+import Admin from "./components/Admin/Admin";
+import AddProduct from "./components/AddProduct/AddProduct";
 
 function App() {
   return (
@@ -16,6 +18,8 @@ function App() {
               <Route path="/products/" element={<ItemListContainer />} />
               <Route path="/item/:id" element={<ItemDetailContainer />} />
               <Route path="/login" element={<LogIn />} />
+              <Route path="/admin" element={<Admin />} />
+              <Route path="/addProduct" element={<AddProduct />} />
             </Routes>
           {/* <Footer /> */}
         </BrowserRouter>

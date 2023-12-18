@@ -1,0 +1,130 @@
+.adminProductContainer {
+    display: flex;
+    /* border: 1px solid red; */
+    border-radius: 10px;
+    /* background-color: #4d4d4d; */
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 10px;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.adminProductNameDescription {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+}
+
+.adminProduct {
+    display: flex;
+    gap: 1rem;
+}
+
+.adminProductImg {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.adminProductName {
+    padding: 7px;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.adminProductDescription{
+    padding: 7px;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: 300px;
+}
+
+.adminProductPriceStock {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.adminProdcutStock {
+    padding: 7px;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.adminProductPrice {
+    padding: 7px;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.adminButtons {
+    display: flex;
+    gap: .5rem;
+}
+
+.btnEdit {
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #4b9cb3;
+    color: white;
+    width: 100px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.btnDelete {
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #c81b1e;
+    color: white;
+    width: 100px;
+    height: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
