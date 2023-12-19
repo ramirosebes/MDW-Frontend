@@ -1,8 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './item.css';
-import Product from '../../Types/Product';
-import ItemProps from '../../Types/Item'; 
+import ItemProps from '../../Types/Item.ts'; 
 
 
 function Item({ item }: ItemProps) {

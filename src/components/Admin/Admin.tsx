@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import "./admin.css";
 import axios from "axios";
-import AdminProducts from "../AdminProducts/AdminProducts";
+import AdminProducts from "../AdminProducts/AdminProducts.tsx";
 import { Link } from "react-router-dom";
-import Product from "../../Types/Product";
+import Product from "../../Types/Product.ts";
 // import AddProduct from "../AddProduct/AddProduct";
 
 const Admin = () => {

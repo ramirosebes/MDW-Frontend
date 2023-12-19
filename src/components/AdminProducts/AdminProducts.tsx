@@ -1,7 +1,7 @@
 import React from "react";
 import "./adminProducts.css";
 import { Link } from "react-router-dom";
-import Product from "../../Types/Product"; 
+import Product from "../../Types/Product.ts"; 
 
 interface AdminProductsProps {
     product: Product;

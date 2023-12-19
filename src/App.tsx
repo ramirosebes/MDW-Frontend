@@ -1,16 +1,16 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
-import Navbar from "./components/Navbar/Navbar";
-import Home from "./components/Home/Home";
-import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
+import Navbar from "./components/Navbar/Navbar.tsx";
+import Home from "./components/Home/Home.tsx";
+import ItemListContainer from "./components/ItemListContainer/ItemListContainer.tsx";
 import "./App.css";
-import ItemDetailContainer from "./components/ItemDetailContainer/ItemDetailContainer";
-import LogIn from "./components/LogIn/LogIn";
-import Admin from "./components/Admin/Admin";
-import AddProduct from "./components/AddProduct/AddProduct";
-import EditProduct from "./components/EditProduct/EditProduct";
-import NotFound from "./components/NotFound/NotFound";
-import Protected from "./components/Protected/Protected";
+import ItemDetailContainer from "./components/ItemDetailContainer/ItemDetailContainer.tsx";
+import LogIn from "./components/LogIn/LogIn.tsx";
+import Admin from "./components/Admin/Admin.tsx";
+import AddProduct from "./components/AddProduct/AddProduct.tsx";
+import EditProduct from "./components/EditProduct/EditProduct.tsx";
+import NotFound from "./components/NotFound/NotFound.tsx";
+import Protected from "./components/Protected/Protected.tsx";
 
 function App() {
     return (

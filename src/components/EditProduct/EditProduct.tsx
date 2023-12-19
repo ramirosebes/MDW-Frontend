@@ -3,7 +3,7 @@ import { useForm, SubmitHandler, FieldValues  } from 'react-hook-form';
 import axios from 'axios';
 import './editProduct.css';
 import { useParams } from 'react-router-dom';
-import Product from '../../Types/Product';
+import Product from '../../Types/Product.ts';
 
 const EditProduct = () => {
     const { register, handleSubmit, reset, setValue, formState: { errors } } = useForm();

@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import ItemDetail from '../ItemDetail/ItemDetail';
+import ItemDetail from '../ItemDetail/ItemDetail.tsx';
 import { useParams } from 'react-router-dom';
 import './itemDetailContainer.css';
 import axios from 'axios';
-import Product from '../../Types/Product';
+import Product from '../../Types/Product.ts';
 
 const ItemDetailContainer = () => {
   const [item, setItem] = useState<Product | null>(null);

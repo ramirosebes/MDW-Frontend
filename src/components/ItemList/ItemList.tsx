@@ -1,8 +1,8 @@
 // ItemList.tsx
 import React from 'react';
-import Item from '../Item/Item';
-import './ItemList.css';
-import Product from '../../Types/Product';
+import Item from '../Item/Item.tsx';
+import './itemList.css'
+import Product from '../../Types/Product.ts';
 
 interface ItemListProps {
   products: Product[];

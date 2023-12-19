@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
-import ItemList from "../ItemList/ItemList";
+import ItemList from "../ItemList/ItemList.tsx";
 // import { getProducts } from "../../helper/pedirDatos";
 import "./itemListContainer.css";
 import axios from "axios";
-import Product from "../../Types/Product";
+import Product from "../../Types/Product.ts";
 function ItemListContainer() {
     const [products, setProducts] = useState<Product[]>([]);
 
