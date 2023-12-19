@@ -8,7 +8,6 @@ import { Link } from "react-router-dom";
 const Admin = () => {
     const [products, setProducts] = useState([]);
     const token = localStorage.getItem('token');
-
     useEffect(() => {
         const fetchProducts = async () => {
             try {
@@ -25,16 +24,11 @@ const Admin = () => {
 
     const handleDeleteProduct = async (productId) => {
         try {
-            // Realiza la solicitud DELETE a la API para eliminar el producto por su id
-            await axios.delete(`http://localhost:3001/api/products/${productId}`,
-                {
-                    headers: {
-                        'Authorization': token
-                    }
+            await axios.delete(`http://localhost:3001/api/products/${productId}`, {
+                headers: {
+                    'Authorization': token
                 }
-            );
-
-            // Actualiza la lista de productos después de la eliminación
+            });
             setProducts((prevProducts) =>
                 prevProducts.filter((product) => product._id !== productId)
             );
@@ -45,12 +39,11 @@ const Admin = () => {
 
     return (
         <div className="adminContainer">
-            <div className="main-title">
-                <h2>Manage products</h2>
+            <div >
+                <h2 className="adminTitle">Manage products</h2>
             </div>
             <div className="productsContainer">
                 <div className="adminBtnContainer">
-                    {/* <button className="addProduct">Add new product</button> */}
                     <Link className="addProduct" to="/admin/addProduct">Add new product</Link>
                 </div>
                 {products.map((prod) => (<AdminProducts product={prod} key={prod._id} onDelete={handleDeleteProduct} />))}

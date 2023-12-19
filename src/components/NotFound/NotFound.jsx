@@ -2,8 +2,10 @@ import React from 'react';
 import './notfound.css';
 const NotFound = () => {
   return (
-    <div>
-      <p className='error'>The page you are looking for does not exist.</p>
+    <div className="notFound">
+      <h2 className="notFundTitle">404</h2>
+      <p className="notFoundP1">Not Found</p>
+      <p className="notFoundP2">The page you are looking foy may have been moved, deleted or possibly never existed.</p>
     </div>
   );
 };

@@ -1,8 +1,6 @@
 .adminProductContainer {
     display: flex;
-    /* border: 1px solid red; */
     border-radius: 10px;
-    /* background-color: #4d4d4d; */
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     padding: 10px;
     justify-content: space-between;
@@ -43,7 +41,7 @@
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-.adminProductDescription{
+.adminProductDescription {
     padding: 7px;
     border-radius: 5px;
     background-color: white;
@@ -140,5 +138,4 @@
     width: 100%;
     height: 100%;
     overflow: auto;
-    
 }

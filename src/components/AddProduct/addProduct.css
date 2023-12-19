@@ -13,10 +13,11 @@
     border-radius: 10px;
 }
 
-/* .formAddProductTitle{
-font-size: 3rem;
-font-weight: bold;
-} */
+.addProductTitle {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
 
 .formAddProduct {
     display: flex;
@@ -74,20 +75,6 @@ font-weight: bold;
     color: #ff0000;
     font-weight: bold;
 }
-
-/* .closeModal {
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
-    font-weight: bold;
-    font-family: cursive;
-}
-
-.divCloseModal {
-    display: flex;
-    justify-content: flex-end;
-    width: 100%;
-} */
 
 .AddProductLabel {
     font-size: 1rem;

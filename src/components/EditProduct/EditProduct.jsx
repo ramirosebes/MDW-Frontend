@@ -5,7 +5,7 @@ import './editProduct.css';
 import { useParams } from 'react-router-dom';
 
 const EditProduct = () => {
-    const { register, handleSubmit, reset, setValue, formState: { errors } } = useForm();
+    const { register, handleSubmit, setValue, formState: { errors } } = useForm();
     const [successMessage, setSuccessMessage] = useState('');
     const [errorMessage, setErrorMessage] = useState('');
     const { id } = useParams();
@@ -16,7 +16,6 @@ const EditProduct = () => {
             try {
                 const response = await axios.get(`http://localhost:3001/api/products/${id}`);
 
-                // Configuramos los valores por defecto en el formulario
                 Object.keys(response.data).forEach(key => {
                     setValue(key, response.data[key]);
                 });
@@ -29,30 +28,25 @@ const EditProduct = () => {
 
     const enviar = async (data) => {
         try {
-            // Realizar la solicitud PUT a la API con la URL específica del producto
             const response = await axios.put(`http://localhost:3001/api/products/${id}`, data, {
                 headers: {
                     'authorization': token
                 }
             });
 
-            // Hacer algo con la respuesta (por ejemplo, imprimir en la consola)
             console.log('Product edited:', response.data);
 
-            // Vaciar los campos después de enviar el formulario
-            // reset();
-
-            // Mostrar el mensaje de éxito
             setSuccessMessage('¡Product edited successfully!');
 
-            // Ocultar el mensaje después de 5 segundos
             setTimeout(() => {
                 setSuccessMessage('');
             }, 3000);
+
         } catch (error) {
-            // Manejar errores de la solicitud (por ejemplo, imprimir en la consola)
             console.error('Error editing product:', error);
+
             setErrorMessage('¡Error editing product!');
+
             setTimeout(() => {
                 setErrorMessage('');
             }, 3000);
@@ -61,6 +55,7 @@ const EditProduct = () => {
 
     return (
         <div className="divFormEditProduct">
+            <h2 className="editProductTitle">Edit product</h2>
             <form action="" onSubmit={handleSubmit(enviar)} className="formEditProduct">
 
                 <label className="editProductLabel" htmlFor="inputName">Name:</label>

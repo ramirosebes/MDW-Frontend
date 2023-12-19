@@ -20,7 +20,6 @@ function Navbar() {
         <div className="div-nav">
             <Link to="/" className="logo"><h1>eShop</h1></Link>
             <button className="openMenu" id="open" onClick={handleNavBarOpenButton}><img src={openIcon} alt="" className="img-nav" /></button>
-            {/* <nav className={`navClass ${isNavVisible ? 'visible slide-in-right' : 'slide-in-left'}`}> */}
             <nav className={`navClass ${isNavVisible ? 'visible' : ''}`}>
                 <button className="closeMenu" id="close" onClick={handleNavBarCloseButton}><img src={closeIcon} alt="" className="img-nav" /></button>
                 <ul className="navList">

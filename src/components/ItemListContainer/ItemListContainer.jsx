@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import ItemList from "../ItemList/ItemList";
-// import { getProducts } from "../../helper/pedirDatos";
 import "./itemListContainer.css";
 import axios from "axios";
 
@@ -19,8 +18,6 @@ function ItemListContainer() {
         fetchProducts();
     }, [products]);
 
-    // console.log(products);
-
     return (
         <div className="itemListContainer-container">
             <ItemList products={products} />
@@ -29,15 +26,3 @@ function ItemListContainer() {
 }
 
 export default ItemListContainer;
-
-// useEffect(() => {
-//     const fetchProducts = async () => {
-//         try {
-//             const productsData = await getProducts();
-//             setProducts(productsData);
-//         } catch (error) {
-//             console.error("Error fetching products:", error);
-//         }
-//     };
-//     fetchProducts();
-// }, [products]);

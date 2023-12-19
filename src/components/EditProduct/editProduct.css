@@ -3,7 +3,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* margin-top: 9rem; */
     position: fixed;
     justify-content: center;
     top: 50%;
@@ -13,10 +12,11 @@
     border-radius: 10px;
 }
 
-/* .formAddProductTitle{
-font-size: 3rem;
-font-weight: bold;
-} */
+.editProductTitle {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
 
 .formEditProduct {
     display: flex;
@@ -76,20 +76,6 @@ font-weight: bold;
     padding: 0;
     margin: 0;
 }
-
-/* .closeModal {
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
-    font-weight: bold;
-    font-family: cursive;
-}
-
-.divCloseModal {
-    display: flex;
-    justify-content: flex-end;
-    width: 100%;
-} */
 
 .editProductLabel {
     font-size: 1rem;

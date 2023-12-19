@@ -11,34 +11,22 @@ const AddProduct = () => {
 
     const enviar = async (data) => {
         try {
-            // Validar que los campos no estén vacíos antes de enviar la solicitud
             if (!data.name || !data.description || !data.image || !data.price || !data.stock) {
                 console.error('All fields are required');
                 return;
             }
-
-            // Realizar la solicitud POST a la API
             const response = await axios.post('http://localhost:3001/api/products', data, {
-            headers: {
-                'authorization': token
-            }
-        });
-
-            // Hacer algo con la respuesta (por ejemplo, imprimir en la consola)
+                headers: {
+                    'authorization': token
+                }
+            });
             console.log('Product added:', response.data);
-
-            // Vaciar los campos después de enviar el formulario
             reset();
-
-            // Mostrar el mensaje de éxito
             setSuccessMessage('¡Product added successfully!');
-
-            // Ocultar el mensaje después de 5 segundos
             setTimeout(() => {
                 setSuccessMessage('');
             }, 3000);
         } catch (error) {
-            // Manejar errores de la solicitud (por ejemplo, imprimir en la consola)
             console.error('Error adding product:', error);
             setErrorMessage('¡Error adding product!');
             setTimeout(() => {
@@ -49,6 +37,7 @@ const AddProduct = () => {
 
     return (
         <div className="divFormAddProduct">
+            <h2 className="addProductTitle">Add product</h2>
             <form action="" onSubmit={handleSubmit(enviar)} className="formAddProduct">
                 <label className="AddProductLabel" htmlFor="inputName">Name:</label>
                 <input id="inputName" className="formInput" type="text" placeholder="Name" {...register('name', { required: true })} />
