@@ -1,20 +1,21 @@
 import React, { useState, useEffect } from 'react';
-import { useForm } from 'react-hook-form';
+import { useForm, SubmitHandler, FieldValues  } from 'react-hook-form';
 import axios from 'axios';
 import './editProduct.css';
 import { useParams } from 'react-router-dom';
+import Product from '../../Types/Product';
 
 const EditProduct = () => {
     const { register, handleSubmit, reset, setValue, formState: { errors } } = useForm();
-    const [successMessage, setSuccessMessage] = useState('');
-    const [errorMessage, setErrorMessage] = useState('');
-    const { id } = useParams();
+    const [successMessage, setSuccessMessage] = useState<string>('');
+    const [errorMessage, setErrorMessage] = useState<string>('');
+    const { id } = useParams<{ id: string }>();
     const token = localStorage.getItem('token');
 
     useEffect(() => {
         const fetchProductById = async () => {
             try {
-                const response = await axios.get(`http://localhost:3001/api/products/${id}`);
+                const response = await axios.get<Product>(`http://localhost:3001/api/products/${id}`);
 
                 // Configuramos los valores por defecto en el formulario
                 Object.keys(response.data).forEach(key => {
@@ -27,7 +28,7 @@ const EditProduct = () => {
         fetchProductById();
     }, [id, setValue])
 
-    const enviar = async (data) => {
+    const enviar: SubmitHandler<FieldValues> = async (data) => {
         try {
             // Realizar la solicitud PUT a la API con la URL específica del producto
             const response = await axios.put(`http://localhost:3001/api/products/${id}`, data, {

@@ -3,16 +3,17 @@ import "./admin.css";
 import axios from "axios";
 import AdminProducts from "../AdminProducts/AdminProducts";
 import { Link } from "react-router-dom";
+import Product from "../../Types/Product";
 // import AddProduct from "../AddProduct/AddProduct";
 
 const Admin = () => {
-    const [products, setProducts] = useState([]);
+    const [products, setProducts] = useState<Product[]>([]);
     const token = localStorage.getItem('token');
 
     useEffect(() => {
         const fetchProducts = async () => {
             try {
-                const response = await axios.get(
+                const response = await axios.get<Product[]>(
                     "http://localhost:3001/api/products"
                 );
                 setProducts(response.data);
@@ -23,7 +24,7 @@ const Admin = () => {
         fetchProducts();
     }, [products]);
 
-    const handleDeleteProduct = async (productId) => {
+    const handleDeleteProduct = async (productId: string) => {
         try {
             // Realiza la solicitud DELETE a la API para eliminar el producto por su id
             await axios.delete(`http://localhost:3001/api/products/${productId}`,

@@ -1,8 +1,14 @@
 import React from "react";
 import "./adminProducts.css";
 import { Link } from "react-router-dom";
+import Product from "../../Types/Product"; 
 
-const AdminProducts = ({ product, onDelete }) => {
+interface AdminProductsProps {
+    product: Product;
+    onDelete: (productId: string) => void;
+}
+
+const AdminProducts = ({ product, onDelete }: AdminProductsProps) => {
 
     const handleDeleteClick = () => {
         onDelete(product._id);
@@ -22,7 +28,6 @@ const AdminProducts = ({ product, onDelete }) => {
                 </div>
             </div>
             <div className="adminButtons">
-                {/* <button className="btnEdit">Edit</button> */}
                 <Link className="btnEdit" to={`/admin/editProduct/${product._id}`}>Edit</Link>
                 <button className="btnDelete" onClick={handleDeleteClick}>Delete</button>
             </div>

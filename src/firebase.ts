@@ -1,10 +1,10 @@
-// Import the functions you need from the SDKs you need
+// Importa las funciones necesarias de los SDK que necesitas
 import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
-// TODO: Add SDKs for Firebase products that you want to use
+// TODO: Agrega SDKs para los productos de Firebase que deseas utilizar
 // https://firebase.google.com/docs/web/setup#available-libraries
 
-// Your web app's Firebase configuration
+// Configuración de Firebase para tu aplicación web
 const firebaseConfig = {
   apiKey: "AIzaSyAt4ylu1DmN-vQ741PIkLQrK4rmI1k5bhA",
   authDomain: "mcga-c0b9f.firebaseapp.com",
@@ -14,7 +14,7 @@ const firebaseConfig = {
   appId: "1:1074965946096:web:5d3a986b0e06a7dc14ac35"
 };
 
-// Initialize Firebase
+// Inicializa Firebase
 const app = initializeApp(firebaseConfig);
 
 export const auth = getAuth();

@@ -3,14 +3,14 @@ import ItemList from "../ItemList/ItemList";
 // import { getProducts } from "../../helper/pedirDatos";
 import "./itemListContainer.css";
 import axios from "axios";
-
+import Product from "../../Types/Product";
 function ItemListContainer() {
-    const [products, setProducts] = useState([]);
+    const [products, setProducts] = useState<Product[]>([]);
 
     useEffect(() => {
         const fetchProducts = async () => {
             try {
-                const response = await axios.get('http://localhost:3001/api/products');
+                const response = await axios.get<Product[]>('http://localhost:3001/api/products');
                 setProducts(response.data);
             } catch (error) {
                 console.error("Error fetching products:", error);
