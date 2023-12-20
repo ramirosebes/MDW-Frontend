@@ -11,6 +11,17 @@ Para descargar los paquetes necesarios del aplicativo:
 npm install
 ```
 
+Crear archivo .env indicando:
+
+```sh
+REACT_APP_FIREBASE_API_KEY (Apikey de Firebase)
+REACT_APP_FIREBASE_AUTH_DOMAIN (Dominio de auth de Firebase)
+REACT_APP_FIREBASE_PROJECT_ID (ID del proyecto de Firebase)
+REACT_APP_FIREBASE_STORAGE_BUCKET (Bucket de almacenamiento de Firebase)
+REACT_APP_FIREBASE_MESSAGING_SENDER_ID (ID de remitente de mensaje de Firebase)
+REACT_APP_FIREBASE_APP_ID (ID de aplicacion de Firebase)
+```
+
 Inicialización:
 
 ```sh

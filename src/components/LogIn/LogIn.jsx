@@ -9,6 +9,7 @@ const Login = () => {
 
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
+    const [errorMessage, setErrorMessage] = useState("");
 
     const navigate = useNavigate();
 
@@ -27,6 +28,11 @@ const Login = () => {
             navigate("/admin");
         } catch (error) {
             console.error(error);
+            setErrorMessage("¡Incorrect credentials!");
+
+            setTimeout(() => {
+                setErrorMessage("");
+            }, 3000);
         }
     };
 
@@ -36,9 +42,10 @@ const Login = () => {
                 <h2 className="loginTitle">Login Page</h2>
                 <form onSubmit={handleSubmit} className="loginForm">
                     <label className="loginLabel" htmlFor="loginEmail">Email:</label>
-                    <input className="loginInput" id="loginEmail" type="email" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)}/>
+                    <input className="loginInput" id="loginEmail" type="email" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} />
                     <label className="loginLabel" htmlFor="loginEmail">Password:</label>
-                    <input className="loginInput" id="loginPassword" type="password" placeholder="Password" required value={password} onChange={(e) => setPassword(e.target.value)}/>
+                    <input className="loginInput" id="loginPassword" type="password" placeholder="Password" required value={password} onChange={(e) => setPassword(e.target.value)} />
+                    {errorMessage && <div className="errorText">{errorMessage}</div>} {/* Mostrar el mensaje de error */}
                     <button type="submit" className="loginButton">Login</button>
                 </form>
             </div>

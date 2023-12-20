@@ -66,4 +66,29 @@
     background-color: #1e90ff;
     color: white;
     font-weight: bold;
+    cursor: pointer;
+}
+
+.loginButton:hover {
+    background-color: #cccccc;
+    color: white;
+}
+
+.loginButton:active {
+    background-color: #000;
+    color: white;
+}
+
+.loginErrorMessageContainer {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.loginErrorMessage {
+    color: #ff0000;
+    margin-top: 10px;
+    display: none;
 }
