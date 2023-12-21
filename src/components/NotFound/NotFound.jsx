@@ -5,7 +5,7 @@ const NotFound = () => {
     <div className="notFound">
       <h2 className="notFundTitle">404</h2>
       <p className="notFoundP1">Not Found</p>
-      <p className="notFoundP2">The page you are looking foy may have been moved, deleted or possibly never existed.</p>
+      <p className="notFoundP2">The page you are looking for may have been moved, deleted or possibly never existed.</p>
     </div>
   );
 };

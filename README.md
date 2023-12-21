@@ -49,9 +49,10 @@ npm start
     * Requiere estar logueado.
     * Será redireccionado en caso de no estar logueado.
 
-## Repositorio
+## Repositorios
 
-https://github.com/ramirosebes/MCGA-Frontend
+#### [Metodologias y Desarrollo Web - Final Frontend](https://github.com/ramirosebes/MCGA-Frontend)
+#### [Metodologias y Desarrollo Web - Final Backend](https://github.com/ramirosebes/MCGA-Backend)
 
 ## Tecnologias
 
@@ -64,3 +65,11 @@ https://github.com/ramirosebes/MCGA-Frontend
 * React Router DOM
 * Axios
 * Firebase
+
+## Autores
+
+| Nombre | Mail     | Github                | LinkedIn                |
+| :-------- | :------- | :------------------------- | :------------------------- |
+| Antuna Juan Manuel | altunajuan@gmail.com | [@Venineitor2000](https://github.com/Venineitor2000) | [Antuna Juan Manuel](https://www.linkedin.com/in//) |
+| Miñón Lorenzo | nicolasmicheletti@gmail.com | [@LorenzoMinon](lorenzominon01@gmail.com) | [Lorenzo Miñón](https://www.linkedin.com/in/lorenzominon/) |
+| Sebes Ramiro Nicolás | ramirosebes@gmail.com | [@ramirosebes](https://github.com/ramirosebes) | [Ramiro Sebes](https://www.linkedin.com/in/ramirosebes) |
