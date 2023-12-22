@@ -22,14 +22,14 @@ function App() {
 
                     <Route path="/" element={<Protected />}>
                         {/* Rutas protegidas */}
-                        <Route path="/admin" element={<Admin />} />
-                        <Route path="/admin/addProduct" element={<AddProduct />} />
-                        <Route path="/admin/editProduct/:id" element={<EditProduct />} />
+                        <Route path="//manageProducts" element={<Admin />} />
+                        <Route path="//manageProducts/addProduct" element={<AddProduct />} />
+                        <Route path="/manageProducts/editProduct/:id" element={<EditProduct />} />
                     </Route>
 
                     {/* Otras rutas públicas */}
                     <Route path="/products/" element={<ItemListContainer />} />
-                    <Route path="/item/:id" element={<ItemDetailContainer />} />
+                    <Route path="/product/:id" element={<ItemDetailContainer />} />
                     <Route path="/login" element={<LogIn />} />
                     <Route path="*" element={<NotFound />} />
                 </Routes>

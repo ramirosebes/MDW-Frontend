@@ -21,7 +21,7 @@ const AdminProducts = ({ product, onDelete }) => {
                 </div>
             </div>
             <div className={styles.buttons}>
-                <Link className={styles.edit} to={`/admin/editProduct/${product._id}`}>Edit</Link>
+                <Link className={styles.edit} to={`/manageProducts/editProduct/${product._id}`}>Edit</Link>
                 <button className={styles.delete} onClick={handleDeleteClick}>Delete</button>
             </div>
         </div>

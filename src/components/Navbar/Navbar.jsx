@@ -25,7 +25,7 @@ function Navbar() {
                 <ul className={styles.navList}>
                     <li><Link to="/home" onClick={handleNavBarCloseButton}>Home</Link></li>
                     <li><Link to="/products" onClick={handleNavBarCloseButton}>Products</Link></li>
-                    {token && <li><Link to="/admin" onClick={handleNavBarCloseButton}>Manage products</Link></li>}
+                    {token && <li><Link to="/manageProducts" onClick={handleNavBarCloseButton}>Manage products</Link></li>}
                     <li><Link to="/login" onClick={handleNavBarCloseButton}>{token ? "Log Out" : "Log In"}</Link></li>
                 </ul>
             </nav>

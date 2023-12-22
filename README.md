@@ -72,5 +72,5 @@ npm start
 | Nombre | Mail     | Github                | LinkedIn                |
 | :-------- | :------- | :------------------------- | :------------------------- |
 | Antuna Juan Manuel | altunajuan@gmail.com | [@Venineitor2000](https://github.com/Venineitor2000) | [Antuna Juan Manuel](https://www.linkedin.com/in/juan-manuel-altuna-641782176/) |
-| Miñón Lorenzo | nicolasmicheletti@gmail.com | [@LorenzoMinon](lorenzominon01@gmail.com) | [Lorenzo Miñón](https://www.linkedin.com/in/lorenzominon/) |
-| Sebes Ramiro Nicolás | ramirosebes@gmail.com | [@ramirosebes](https://github.com/ramirosebes) | [Ramiro Sebes](https://www.linkedin.com/in/ramirosebes) |
+| Miñón Lorenzo | nicolasmicheletti@gmail.com | [@LorenzoMinon](lorenzominon01@gmail.com) | [Miñón Lorenzo](https://www.linkedin.com/in/lorenzominon/) |
+| Sebes Ramiro Nicolás | ramirosebes@gmail.com | [@ramirosebes](https://github.com/ramirosebes) | [Sebes Ramiro Nicolás](https://www.linkedin.com/in/ramirosebes) |

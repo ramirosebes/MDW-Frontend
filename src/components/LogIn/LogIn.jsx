@@ -25,7 +25,7 @@ const Login = () => {
             const user = userCredential.user;
             localStorage.setItem("token", user.accessToken);
 
-            navigate("/admin");
+            navigate("/manageProducts");
         } catch (error) {
             console.error(error);
             setErrorMessage("¡Incorrect credentials!");
@@ -45,7 +45,7 @@ const Login = () => {
                     <input className={styles.input} id="email" type="email" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} />
                     <label className={styles.label} htmlFor="email">Password:</label>
                     <input className={styles.input} id="password" type="password" placeholder="Password" required value={password} onChange={(e) => setPassword(e.target.value)} />
-                    {errorMessage && <div className={styles.errorMessage}>{errorMessage}</div>} {/* Mostrar el mensaje de error */}
+                    {errorMessage && <div className={styles.errorMessage}>{errorMessage}</div>}
                     <button type="submit" className={styles.button}>Login</button>
                 </form>
             </div>
