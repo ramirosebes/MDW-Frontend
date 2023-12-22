@@ -49,6 +49,9 @@ npm start
     * Pantalla que permite a los administradores crear, editar o eliminar productos.
     * Requiere estar logueado.
     * Será redireccionado en caso de no estar logueado.
+ 
+  * Page not found
+    * Pantalla que indica que el dominio buscado no existe
 
 ## Repositorios
 
