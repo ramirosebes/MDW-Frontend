@@ -1,4 +1,4 @@
-.loginDivContainer {
+.container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -6,7 +6,7 @@
     margin-top: 15rem;
 }
 
-.loginDiv {
+.div {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -17,19 +17,20 @@
     gap: 1rem;
 }
 
-.loginTitle {
+.title {
     font-size: 2rem;
     font-weight: bold;
 }
 
-.loginForm {
+.form {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 0.5rem;
 }
 
-.loginInput {
+.input {
     border: none;
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -38,26 +39,18 @@
     padding-left: 10px;
 }
 
-.loginInput:focus {
+.input:focus {
     outline: none;
 }
 
-.loginForm {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 0.5rem;
-}
-
-.loginLabel {
+.label {
     font-size: 1rem;
     font-weight: bold;
     display: flex;
     align-self: flex-start;
 }
 
-.loginButton {
+.button {
     border: none;
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -69,17 +62,17 @@
     cursor: pointer;
 }
 
-.loginButton:hover {
+.button:hover {
     background-color: #cccccc;
     color: white;
 }
 
-.loginButton:active {
-    background-color: #000;
+.button:active {
+    background-color: #1e90ff;
     color: white;
 }
 
-.loginErrorMessageContainer {
+.errorMessageContainer {
     max-width: 400px;
     margin: 0 auto;
     padding: 20px;
@@ -87,8 +80,7 @@
     border-radius: 5px;
 }
 
-.loginErrorMessage {
+.errorMessage {
     color: #ff0000;
-    margin-top: 10px;
-    display: none;
+    font-weight: bold;
 }

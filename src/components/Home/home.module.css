@@ -1,11 +1,11 @@
-.container-home {
+.container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.homeTitle {
+.mainTitle {
     margin-top: 4rem;
     font-weight: bold;
     font-size: 2.5rem;
@@ -16,7 +16,7 @@
     width: 800px;
 }
 
-.aboutUs {
+.secondTitle {
     margin-top: 2rem;
     font-size: 2rem;
     font-weight: bold;

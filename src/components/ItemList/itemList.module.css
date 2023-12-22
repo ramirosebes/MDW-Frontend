@@ -7,14 +7,14 @@
     max-width: 100%;
 }
 
-.divTitle {
+.div {
     width: 100%;
     display: flex;
     justify-content: center;
 }
 
-.mainTitle {
-    margin-top: 2rem;
+.title{
+    margin-top: 4rem;
     font-weight: bold;
     font-size: 2.5rem;
 }

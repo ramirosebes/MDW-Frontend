@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from "react";
-import "./admin.css";
 import axios from "axios";
 import AdminProducts from "../AdminProducts/AdminProducts";
 import { Link } from "react-router-dom";
-// import AddProduct from "../AddProduct/AddProduct";
+import styles from "./admin.module.css";
 
 const Admin = () => {
     const [products, setProducts] = useState([]);
@@ -38,13 +37,13 @@ const Admin = () => {
     };
 
     return (
-        <div className="adminContainer">
+        <div className={styles.container}>
             <div >
-                <h2 className="adminTitle">Manage products</h2>
+                <h2 className={styles.title}>Manage products</h2>
             </div>
-            <div className="productsContainer">
-                <div className="adminBtnContainer">
-                    <Link className="addProduct" to="/admin/addProduct">Add new product</Link>
+            <div className={styles.productsList}>
+                <div className={styles.buttonContainer}>
+                    <Link className={styles.button} to="/admin/addProduct">Add new product</Link>
                 </div>
                 {products.map((prod) => (<AdminProducts product={prod} key={prod._id} onDelete={handleDeleteProduct} />))}
             </div>

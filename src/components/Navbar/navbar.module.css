@@ -1,4 +1,4 @@
-.div-nav {
+.container {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -86,7 +86,7 @@
     background-color: #737373;
 }
 
-.img-nav {
+.image{
     width: 2rem;
     height: 2rem;
 }

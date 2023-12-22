@@ -1,6 +1,6 @@
 import React from "react";
-import "./adminProducts.css";
 import { Link } from "react-router-dom";
+import styles from "./adminPorducts.module.css";
 
 const AdminProducts = ({ product, onDelete }) => {
     const handleDeleteClick = () => {
@@ -8,21 +8,21 @@ const AdminProducts = ({ product, onDelete }) => {
     };
 
     return (
-        <div className="adminProductContainer">
-            <div className="adminProduct">
-                <img src={product.image} alt={product.name} className="adminProductImg"/>
-                <div className="adminProductNameDescription">
-                    <p className="adminProductName">{product.name}</p>
-                    <p className="adminProductDescription">{product.description}</p>
+        <div className={styles.container}>
+            <div className={styles.productsList}>
+                <img src={product.image} alt={product.name} className={styles.image}/>
+                <div className={styles.leters}>
+                    <p className={styles.name}>{product.name}</p>
+                    <p className={styles.description}>{product.description}</p>
                 </div>
-                <div className="adminProductPriceStock">
-                    <p className="adminProductPrice">${product.price}</p>
-                    <p className="adminProdcutStock">{product.stock}</p>
+                <div className={styles.numbers}>
+                    <p className={styles.price}>${product.price}</p>
+                    <p className={styles.stock}>{product.stock}</p>
                 </div>
             </div>
-            <div className="adminButtons">
-                <Link className="btnEdit" to={`/admin/editProduct/${product._id}`}>Edit</Link>
-                <button className="btnDelete" onClick={handleDeleteClick}>Delete</button>
+            <div className={styles.buttons}>
+                <Link className={styles.edit} to={`/admin/editProduct/${product._id}`}>Edit</Link>
+                <button className={styles.delete} onClick={handleDeleteClick}>Delete</button>
             </div>
         </div>
     );

@@ -1,16 +1,17 @@
-import "./itemDetail.css"
+import React from "react"
+import styles from "./itemDetail.module.css"
 
 const ItemDetail = ( {item} )  => {
     return (
-        <div className='product-detail'>
-            <div className="div-left">
-                <img src={item.image} alt={item.name} />
+        <div className={styles.container}>
+            <div className={styles.left}>
+                <img src={item.image} alt={item.name} className={styles.image}/>
             </div>
-            <div className="div-right">
-                <h3 className='title'>{item.name}</h3>
-                <p className="description">{item.description}</p>
-                <p className="stock">Stock: {item.stock}</p>
-                <p className="price">Price: ${item.price}</p>
+            <div className={styles.right}>
+                <h3 className={styles.title}>{item.name}</h3>
+                <p className={styles.description}>{item.description}</p>
+                <p className={styles.stock}>Stock: {item.stock}</p>
+                <p className={styles.price}>Price: ${item.price}</p>
             </div>
         </div>
     )

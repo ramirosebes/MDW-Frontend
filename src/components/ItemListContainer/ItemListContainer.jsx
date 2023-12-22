@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import ItemList from "../ItemList/ItemList";
-import "./itemListContainer.css";
 import axios from "axios";
 
 function ItemListContainer() {
@@ -19,7 +18,7 @@ function ItemListContainer() {
     }, [products]);
 
     return (
-        <div className="itemListContainer-container">
+        <div>
             <ItemList products={products} />
         </div>
     );

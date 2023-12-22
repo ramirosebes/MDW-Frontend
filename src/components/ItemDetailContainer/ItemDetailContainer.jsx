@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import ItemDetail from '../ItemDetail/ItemDetail';
 import { useParams } from 'react-router-dom';
-import './itemDetailContainer.css';
 import axios from "axios";
+import styles from "./itemDetailContainer.module.css"
 
 const ItemDetailContainer = () => {
 
@@ -22,7 +22,7 @@ const ItemDetailContainer = () => {
     }, [id])
 
     return (
-        <div className="main-content">
+        <div className={styles.container}>
             {item && <ItemDetail item={item} />}
         </div>
     )

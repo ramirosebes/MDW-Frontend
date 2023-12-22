@@ -2,7 +2,7 @@ import { useState } from "react";
 import { auth } from "../../firebase";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
-import "./logIn.css";
+import styles from "./logIn.module.css";
 
 const Login = () => {
     localStorage.removeItem("token");
@@ -37,16 +37,16 @@ const Login = () => {
     };
 
     return (
-        <div className="loginDivContainer">
-            <div className="loginDiv">
-                <h2 className="loginTitle">Login Page</h2>
-                <form onSubmit={handleSubmit} className="loginForm">
-                    <label className="loginLabel" htmlFor="loginEmail">Email:</label>
-                    <input className="loginInput" id="loginEmail" type="email" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} />
-                    <label className="loginLabel" htmlFor="loginEmail">Password:</label>
-                    <input className="loginInput" id="loginPassword" type="password" placeholder="Password" required value={password} onChange={(e) => setPassword(e.target.value)} />
-                    {errorMessage && <div className="errorText">{errorMessage}</div>} {/* Mostrar el mensaje de error */}
-                    <button type="submit" className="loginButton">Login</button>
+        <div className={styles.container}>
+            <div className={styles.div}>
+                <h2 className={styles.title}>Login Page</h2>
+                <form onSubmit={handleSubmit} className={styles.form}>
+                    <label className={styles.label} htmlFor="email">Email:</label>
+                    <input className={styles.input} id="email" type="email" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} />
+                    <label className={styles.label} htmlFor="email">Password:</label>
+                    <input className={styles.input} id="password" type="password" placeholder="Password" required value={password} onChange={(e) => setPassword(e.target.value)} />
+                    {errorMessage && <div className={styles.errorMessage}>{errorMessage}</div>} {/* Mostrar el mensaje de error */}
+                    <button type="submit" className={styles.button}>Login</button>
                 </form>
             </div>
         </div>

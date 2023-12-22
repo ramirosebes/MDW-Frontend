@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { useForm } from 'react-hook-form';
 import axios from 'axios';
-import './editProduct.css';
 import { useParams } from 'react-router-dom';
+import styles from "./editProduct.module.css";
 
 const EditProduct = () => {
     const { register, handleSubmit, setValue, formState: { errors } } = useForm();
@@ -54,33 +54,33 @@ const EditProduct = () => {
     };
 
     return (
-        <div className="divFormEditProduct">
-            <h2 className="editProductTitle">Edit product</h2>
-            <form action="" onSubmit={handleSubmit(enviar)} className="formEditProduct">
+        <div className={styles.container}>
+            <h2 className={styles.title}>Edit product</h2>
+            <form action="" onSubmit={handleSubmit(enviar)} className={styles.form}>
 
-                <label className="editProductLabel" htmlFor="inputName">Name:</label>
-                <input id="inputName" className="formInput" type="text" placeholder="Name" {...register('name', { required: true })} />
-                {errors.name && <span className="errorText">¡The name is required!</span>}
+                <label className={styles.label} htmlFor="inputName">Name:</label>
+                <input id="inputName" className={styles.input} type="text" placeholder="Name" {...register('name', { required: true })} />
+                {errors.name && <span className={styles.errorText}>¡The name is required!</span>}
 
-                <label className="editProductLabel" htmlFor="inputImage">Image:</label>
-                <input id="inputImage" className="formInput" type="text" placeholder="Image" {...register('image', { required: true })} />
-                {errors.image && <span className="errorText">¡The image is required!</span>}
+                <label className={styles.label} htmlFor="inputImage">Image:</label>
+                <input id="inputImage" className={styles.input} type="text" placeholder="Image" {...register('image', { required: true })} />
+                {errors.image && <span className={styles.errorText}>¡The image is required!</span>}
 
-                <label className="editProductLabel" htmlFor="inputPrice">Price:</label>
-                <input id="inputPrice" className="formInput" type="number" placeholder="Price" {...register('price', { required: true })} />
-                {errors.price && <span className="errorText">¡The price is required!</span>}
+                <label className={styles.label} htmlFor="inputPrice">Price:</label>
+                <input id="inputPrice" className={styles.input} type="number" placeholder="Price" {...register('price', { required: true })} />
+                {errors.price && <span className={styles.errorText}>¡The price is required!</span>}
 
-                <label className="editProductLabel" htmlFor="inputStock">Stock:</label>
-                <input id="inputStock" className="formInput" type="number" placeholder="Stock" {...register('stock', { required: true })} />
-                {errors.stock && <span className="errorText">¡The stock is required!</span>}
+                <label className={styles.label} htmlFor="inputStock">Stock:</label>
+                <input id="inputStock" className={styles.input} type="number" placeholder="Stock" {...register('stock', { required: true })} />
+                {errors.stock && <span className={styles.errorText}>¡The stock is required!</span>}
 
-                <label className="editProductLabel" htmlFor="inputDescription">Description</label>
-                <textarea id="inputDescription" className="formInput textarea" placeholder="Description" {...register('description', { required: true })}></textarea>
-                {errors.description && <span className="errorText">¡The description is required!</span>}
+                <label className={styles.label} htmlFor="inputDescription">Description</label>
+                <textarea id="inputDescription" className={`${styles.input} ${styles.textarea}`} placeholder="Description" {...register('description', { required: true })}></textarea>
+                {errors.description && <span className={styles.errorText}>¡The description is required!</span>}
                 
-                <button className="formButton" type="submit">Send</button>
-                {successMessage && <div className="successMessage">{successMessage}</div>}
-                {errorMessage && <div className="errorMessage">{errorMessage}</div>}
+                <button className={styles.button} type="submit">Send</button>
+                {successMessage && <div className={styles.successMessage}>{successMessage}</div>}
+                {errorMessage && <div className={styles.errorMessage}>{errorMessage}</div>}
             </form>
         </div>
     );

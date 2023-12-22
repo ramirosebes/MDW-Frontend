@@ -20,6 +20,7 @@ REACT_APP_FIREBASE_PROJECT_ID (ID del proyecto de Firebase)
 REACT_APP_FIREBASE_STORAGE_BUCKET (Bucket de almacenamiento de Firebase)
 REACT_APP_FIREBASE_MESSAGING_SENDER_ID (ID de remitente de mensaje de Firebase)
 REACT_APP_FIREBASE_APP_ID (ID de aplicacion de Firebase)
+REACT_APP_FIREBASE_MEASUREMENT_ID (ID de Google Analytics "opcional")
 ```
 
 Inicialización:
@@ -70,6 +71,6 @@ npm start
 
 | Nombre | Mail     | Github                | LinkedIn                |
 | :-------- | :------- | :------------------------- | :------------------------- |
-| Antuna Juan Manuel | altunajuan@gmail.com | [@Venineitor2000](https://github.com/Venineitor2000) | [Antuna Juan Manuel](https://www.linkedin.com/in//) |
+| Antuna Juan Manuel | altunajuan@gmail.com | [@Venineitor2000](https://github.com/Venineitor2000) | [Antuna Juan Manuel](https://www.linkedin.com/in/juan-manuel-altuna-641782176/) |
 | Miñón Lorenzo | nicolasmicheletti@gmail.com | [@LorenzoMinon](lorenzominon01@gmail.com) | [Lorenzo Miñón](https://www.linkedin.com/in/lorenzominon/) |
 | Sebes Ramiro Nicolás | ramirosebes@gmail.com | [@ramirosebes](https://github.com/ramirosebes) | [Ramiro Sebes](https://www.linkedin.com/in/ramirosebes) |

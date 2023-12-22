@@ -6,7 +6,14 @@
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-.product > div {
+.image {
+    width: 200px;
+    height: 100px;
+    aspect-ratio: 2/1;
+    object-fit: cover;
+}
+
+.detail {
     padding: 1rem;
     background-color: #ffffff;
     display: flex;
@@ -14,14 +21,7 @@
     gap: .5rem;
 }
 
-.product > img {
-    width: 200px;
-    height: 100px;
-    aspect-ratio: 2/1;
-    object-fit: cover;
-}
-
-.product .view-more {
+.product .viewMore {
     text-decoration: none;
     background-color: #272727;
     color: white;
@@ -31,6 +31,6 @@
     transition: .2s;
 }
 
-.product .view-more:hover {
+.product .viewMore:hover {
     background-color: #737373;
 }

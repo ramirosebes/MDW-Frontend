@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import './navbar.css';
 import closeIcon from '../../img/cross.svg';
 import openIcon from '../../img/menu.svg';
+import styles from "./navbar.module.css";
 
 function Navbar() {
     const [isNavVisible, setNavVisibility] = useState(false);
@@ -17,16 +17,16 @@ function Navbar() {
     }
 
     return (
-        <div className="div-nav">
-            <Link to="/" className="logo"><h1>eShop</h1></Link>
-            <button className="openMenu" id="open" onClick={handleNavBarOpenButton}><img src={openIcon} alt="" className="img-nav" /></button>
-            <nav className={`navClass ${isNavVisible ? 'visible' : ''}`}>
-                <button className="closeMenu" id="close" onClick={handleNavBarCloseButton}><img src={closeIcon} alt="" className="img-nav" /></button>
-                <ul className="navList">
-                    <li><Link className="menu-link" to="/home" onClick={handleNavBarCloseButton}>Home</Link></li>
-                    <li><Link className="menu-link" to="/products" onClick={handleNavBarCloseButton}>Products</Link></li>
-                    {token && <li><Link className="menu-link" to="/admin" onClick={handleNavBarCloseButton}>Manage products</Link></li>}
-                    <li><Link className="menu-link" to="/login" onClick={handleNavBarCloseButton}>{token ? "Log Out" : "Log In"}</Link></li>
+        <div className={styles.container}>
+            <Link to="/" className={styles.logo}><h1>eShop</h1></Link>
+            <button className={styles.openMenu} id="open" onClick={handleNavBarOpenButton}><img src={openIcon} alt="" className={styles.image} /></button>
+            <nav className={`${styles.navClass} ${isNavVisible ? styles.visible : ''}`}>
+                <button className={styles.closeMenu} id="close" onClick={handleNavBarCloseButton}><img src={closeIcon} alt="" className={styles.image} /></button>
+                <ul className={styles.navList}>
+                    <li><Link to="/home" onClick={handleNavBarCloseButton}>Home</Link></li>
+                    <li><Link to="/products" onClick={handleNavBarCloseButton}>Products</Link></li>
+                    {token && <li><Link to="/admin" onClick={handleNavBarCloseButton}>Manage products</Link></li>}
+                    <li><Link to="/login" onClick={handleNavBarCloseButton}>{token ? "Log Out" : "Log In"}</Link></li>
                 </ul>
             </nav>
         </div>

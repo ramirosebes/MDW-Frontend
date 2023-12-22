@@ -1,4 +1,4 @@
-.divFormEditProduct {
+.container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -12,13 +12,13 @@
     border-radius: 10px;
 }
 
-.editProductTitle {
+.title {
     font-size: 2rem;
     font-weight: bold;
     margin-bottom: 1rem;
 }
 
-.formEditProduct {
+.form {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -29,7 +29,14 @@
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-.formInput {
+.label {
+    font-size: 1rem;
+    font-weight: bold;
+    display: flex;
+    align-self: flex-start;
+}
+
+.input {
     border-radius: 5px;
     border: none;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -37,7 +44,7 @@
     width: 300px;
 }
 
-.formInput:focus {
+.input:focus {
     outline: none;
 }
 
@@ -49,7 +56,7 @@
     resize: none;
 }
 
-.formButton {
+.button {
     border-radius: 5px;
     border: none;
     width: 100px;
@@ -75,11 +82,4 @@
     font-weight: bold;
     padding: 0;
     margin: 0;
-}
-
-.editProductLabel {
-    font-size: 1rem;
-    font-weight: bold;
-    display: flex;
-    align-self: flex-start;
 }
