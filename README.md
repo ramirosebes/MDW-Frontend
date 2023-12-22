@@ -1,4 +1,4 @@
-# Metodologias y Desarrollo Web - Final Frontend
+# Metodologías y Desarrollo Web - Final Frontend
 > Aplicación web
 
 Aplicación web desarrollada utilizando principalmente React, además de distintas librerias que facilitaron el desarrollo o las visuales del aplicativo.
